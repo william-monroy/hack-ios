@@ -23,6 +23,7 @@
 		B50316142A69FFFB00B8B519 /* DraggableResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316132A69FFFB00B8B519 /* DraggableResultView.swift */; };
 		B50316162A6A108200B8B519 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316152A6A108200B8B519 /* MainView.swift */; };
 		B503161A2A6A1D3600B8B519 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316192A6A1D3600B8B519 /* MenuView.swift */; };
+		B503161C2A6A27B100B8B519 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503161B2A6A27B100B8B519 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		B50316132A69FFFB00B8B519 /* DraggableResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableResultView.swift; sourceTree = "<group>"; };
 		B50316152A6A108200B8B519 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B50316192A6A1D3600B8B519 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B503161B2A6A27B100B8B519 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				B50316072A69D17300B8B519 /* Model */,
+				B50316042A69C2C400B8B519 /* Components */,
 				3D42101C2A69A6A1003D1329 /* hack_iosApp.swift */,
 				3D42101E2A69A6A1003D1329 /* ContentView.swift */,
 				B50316022A69C29400B8B519 /* HomeView.swift */,
-				B50316042A69C2C400B8B519 /* Components */,
 				3D4210202A69A6A6003D1329 /* Assets.xcassets */,
 				3D4210222A69A6A6003D1329 /* Preview Content */,
 			);
@@ -166,6 +168,7 @@
 				B50316082A69D18A00B8B519 /* BreedFilter.swift */,
 				B503160C2A69DDD500B8B519 /* Location.swift */,
 				B50316112A69EADD00B8B519 /* Dog.swift */,
+				B503161B2A6A27B100B8B519 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				B503160F2A69E43500B8B519 /* DogCardView.swift in Sources */,
 				B50316032A69C29400B8B519 /* HomeView.swift in Sources */,
 				3D42101F2A69A6A1003D1329 /* ContentView.swift in Sources */,
+				B503161C2A6A27B100B8B519 /* Colors.swift in Sources */,
 				B50316162A6A108200B8B519 /* MainView.swift in Sources */,
 				3D42101D2A69A6A1003D1329 /* hack_iosApp.swift in Sources */,
 				B503161A2A6A1D3600B8B519 /* MenuView.swift in Sources */,
