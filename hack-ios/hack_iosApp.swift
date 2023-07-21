@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct hack_iosApp: App {
+    
+    @StateObject private var predictionStatus = PredictionStatus()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(predictionStatus)
         }
     }
 }
