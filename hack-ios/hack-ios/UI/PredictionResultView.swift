@@ -15,6 +15,7 @@ struct PredictionResultView: View {
             Text(labelData.label.capitalized)
                 .font(.largeTitle).foregroundColor(.blue)
             
+            
         }// VStack
         .frame(width: 400)
         .padding()
