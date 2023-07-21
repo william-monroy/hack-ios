@@ -8,62 +8,90 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var logSucces: Bool = false
     @State private var email = ""
     @State private var password = ""
 
     var body: some View {
-        ZStack {
-            Image("Patitas")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+        
+        if logSucces {
+            MenuView()
+        } else {
             
-            VStack {
-                Spacer()
+            ZStack {
+                
+                Image("Pattern")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Image("Perrito")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200)
                     
-                    Text("Where is my Woof?")
-                        .font(.system(size: 34, weight: .bold, design: .rounded))
-                        .multilineTextAlignment(.center)
-                        .padding(.top, 20)
-                }
-                
-                Spacer()
-                
-                VStack {
-                    TextField("Email", text: $email)
-                        .padding()
-                        .background(Color.white.opacity(0.85))
-                        .cornerRadius(5.0)
+                    Spacer()
                     
-                    SecureField("Password", text: $password)
-                        .padding()
-                        .background(Color.white.opacity(0.85))
-                        .cornerRadius(5.0)
+                    VStack {
                         
-                    Button(action: {
-                        print("Botón de inicio de sesión presionado")
-                    }) {
-                        Text("Login")
-                            .font(.headline)
-                            .foregroundColor(.white)
+                        Image("Perrito")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                        
+                        Text("Where is my Woof?")
+                            .font(.system(size: 34, weight: .bold, design: .rounded))
+                            .multilineTextAlignment(.center)
+                            .padding(.top, 20)
+                        
+                    } // -> VStack
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    VStack {
+                        
+                        TextField("Email", text: $email)
+                            .frame(width: 320)
                             .padding()
-                            .frame(width: 220, height: 60)
-                            .background(Color.blue)
-                            .cornerRadius(15.0)
-                    }
-                }
-                .padding(24)
+                            .background(Color.white)
+                            .cornerRadius(5.0)
+                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                        
+                        SecureField("Password", text: $password)
+                            .frame(width: 320)
+                            .padding()
+                            .background(Color.white)
+                            .cornerRadius(5.0)
+                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        Button(action: {
+                            self.logSucces.toggle()
+                        }) {
+                            Text("Login")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(width: 250, height: 60)
+                                .background(Colors.lightOrange)
+                                .cornerRadius(50)
+                        } // -> Button
+                        
+                    } // -> VStack
+                    .padding(24)
+                    
+                    Spacer()
+                    
+                } // -> VStack
                 
-                Spacer()
-            }
-        }
-    }
-}
+            } // -> ZStack
+            
+        } // -> if-else
+        
+    } // -> body
+    
+} // -> ContentView
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

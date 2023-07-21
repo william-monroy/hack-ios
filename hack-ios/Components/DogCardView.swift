@@ -116,6 +116,6 @@ struct DogCardView: View {
 
 struct DogCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DogCardView(pet: Dog.dogs[0])
+        DogCardView(pet: Dog.dogs[2])
     }
 }

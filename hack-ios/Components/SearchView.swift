@@ -11,7 +11,6 @@ import MapKit
 struct SearchView: View {
     
     @State private var address: String = ""
-    @State private var showDogFilters: Bool = false
     @State var selectedFilter = BreedFilter.All
     
     var body: some View {
