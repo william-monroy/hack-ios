@@ -38,7 +38,6 @@ struct MenuView: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 780)
                 MainView(selectedTab: $tabSelected)
             } // -> VStack
             

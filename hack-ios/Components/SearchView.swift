@@ -29,6 +29,7 @@ struct SearchView: View {
                         .foregroundColor(.orange)
                     
                     TextField("Enter an address, neighbourhood or city", text: $address)
+                        .foregroundColor(.gray)
                         .font(.system(size: 13))
                         .frame(width: 250)
                     
