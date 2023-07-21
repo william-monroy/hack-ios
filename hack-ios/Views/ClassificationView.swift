@@ -24,7 +24,7 @@ struct ClassificationView: View {
                 
             }// HStack
             .onAppear(perform: classifierViewModel.loadJSON)
-            .frame(width: geo.size.width)
+            .frame(width: geo.size.width, height: geo.size.width)
         }
     }
 }
