@@ -58,48 +58,52 @@ struct ReportView: View {
                         TextField("Number", text: $number)
                     }
                     
-                    
-                    
-                    Section(header: Text("Upload a Photo")) {
-                        // For camera access uncomment below
-                        Button(action: {
-                            self.sourceType = .camera
-                            self.showingImagePicker = true
-                        }) {
-                            HStack {
-                                Spacer()
-                                Text("Select a Photo")
-                                Spacer()
+                    ScrollView {
+                        VStack {
+                            Section(header: Text("")) {
+                                // For camera access uncomment below
+                                Button(action: {
+                                    self.sourceType = .camera
+                                    self.showingImagePicker = true
+                                }) {
+                                    HStack {
+                                        Spacer()
+                                        Text("Select a Photo")
+                                        Spacer()
+                                    }
+                                }
+                                
+                                /*Button(action: {
+                                 // Open camera
+                                 }) {
+                                 HStack {
+                                 Spacer()
+                                 Text("Take a Photo")
+                                 Spacer()
+                                 }
+                                 }*/
+                                
+                                // Photo Preview
+                                if let image = self.image {
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                } else {
+                                    Image("Image") // Placeholder image when no image is selected
+                                        .resizable()
+                                        .scaledToFit()
+                                }
                             }
-                        }
-                        
-                        /*Button(action: {
-                            // Open camera
-                        }) {
-                            HStack {
-                                Spacer()
-                                Text("Take a Photo")
-                                Spacer()
+                            
+                            Section {
+                                Button(action: submit) {
+                                    Text("Submit")
+                                }
                             }
-                        }*/
-                        
-                        // Photo Preview
-                        if let image = self.image {
-                            image
-                                .resizable()
-                                .scaledToFit()
-                        } else {
-                            Image("Image") // Placeholder image when no image is selected
-                                .resizable()
-                                .scaledToFit()
                         }
                     }
-                    
-                    Section {
-                                            Button(action: submit) {
-                                                Text("Submit")
-                                            }
-                                        }
+                    Spacer()
+                        .frame(height: 50)
                 }
             }
             .navigationTitle("Report a Missing Dog")
