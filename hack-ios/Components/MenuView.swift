@@ -26,7 +26,7 @@ struct MenuView: View {
                     HomeView()
                         .tag(Tab.house)
                     
-                    ContentView()
+                    ClassificationView()
                         .tag(Tab.camera)
                     
                     ReportView()
