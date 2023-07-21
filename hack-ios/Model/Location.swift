@@ -16,7 +16,8 @@ struct Location: Identifiable {
 
 extension Location {
     static var locations: [Location] = [
-        Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)),
-        Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076))
+        Location(name: "Tec de Monterrey", coordinate: CLLocationCoordinate2D(latitude: 25.650000, longitude: -100.291056)),
+        Location(name: "Av. Luis Elizondo", coordinate: CLLocationCoordinate2D(latitude: 25.646500, longitude: -100.292306)),
+        Location(name: "Valparaíso", coordinate: CLLocationCoordinate2D(latitude: 25.645150, longitude:  -100.290056))
     ]
 }

@@ -10,13 +10,20 @@ import MapKit
 
 struct HomeView: View {
     
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 25.6866, longitude: -100.3161), span: MKCoordinateSpan(latitudeDelta: 0.0075, longitudeDelta: 0.0075))
+    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 25.646389, longitude: -100.290556), span: MKCoordinateSpan(latitudeDelta: 0.0075, longitudeDelta: 0.0075))
     
     var body: some View {
         
         ZStack {
             
-            Map(coordinateRegion: $mapRegion)
+            Map(coordinateRegion: $mapRegion, annotationItems: Location.locations) { location in
+                MapAnnotation(coordinate: location.coordinate) {
+                    Image("LocationIcon")
+                        .resizable()
+                        .frame(width: 30, height: 35)
+                        .shadow(color: .gray, radius: 5, x: 0, y: 5)
+                }
+            }
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
