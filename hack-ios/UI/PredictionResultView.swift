@@ -38,7 +38,7 @@ struct PredictionResultView: View {
             .padding(15)
             
         }// VStack
-        .frame(width: 400)
+        .frame(width: 600, height: 1200)
         .padding()
     }
 }

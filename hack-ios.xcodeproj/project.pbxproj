@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30CE038B2A6A2917009872A1 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE038A2A6A2917009872A1 /* ReportView.swift */; };
-		3D2584402A6A5DDE00C5197F /* DogsModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3D25843F2A6A5DDE00C5197F /* DogsModel.mlmodel */; };
 		3D2584422A6A5F4400C5197F /* PredictionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2584412A6A5F4400C5197F /* PredictionStatus.swift */; };
 		3D2584462A6A647D00C5197F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2584452A6A647D00C5197F /* Helpers.swift */; };
 		3D2584482A6A649900C5197F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2584472A6A649900C5197F /* Constants.swift */; };
@@ -39,6 +38,7 @@
 		B503161A2A6A1D3600B8B519 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316192A6A1D3600B8B519 /* MenuView.swift */; };
 		B503161C2A6A27B100B8B519 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503161B2A6A27B100B8B519 /* Colors.swift */; };
 		B58467262A6A595E009DFF56 /* CardCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58467252A6A595E009DFF56 /* CardCameraView.swift */; };
+		B5FCF73E2A6B0BF800931CCC /* DogsModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5FCF73D2A6B0BF800931CCC /* DogsModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 
 /* Begin PBXFileReference section */
 		30CE038A2A6A2917009872A1 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
-		3D25843F2A6A5DDE00C5197F /* DogsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DogsModel.mlmodel; path = ../../../../../../../Downloads/DogsModel.mlmodel; sourceTree = "<group>"; };
 		3D2584412A6A5F4400C5197F /* PredictionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionStatus.swift; sourceTree = "<group>"; };
 		3D2584452A6A647D00C5197F /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3D2584472A6A649900C5197F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		B50316192A6A1D3600B8B519 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		B503161B2A6A27B100B8B519 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B58467252A6A595E009DFF56 /* CardCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCameraView.swift; sourceTree = "<group>"; };
+		B5FCF73D2A6B0BF800931CCC /* DogsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DogsModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 		3D25843E2A6A5D7D00C5197F /* ML */ = {
 			isa = PBXGroup;
 			children = (
-				3D25843F2A6A5DDE00C5197F /* DogsModel.mlmodel */,
+				B5FCF73D2A6B0BF800931CCC /* DogsModel.mlmodel */,
 				3D2584412A6A5F4400C5197F /* PredictionStatus.swift */,
 			);
 			path = ML;
@@ -408,7 +408,6 @@
 				B50316092A69D18A00B8B519 /* BreedFilter.swift in Sources */,
 				3D2584482A6A649900C5197F /* Constants.swift in Sources */,
 				3D53493B2A6A6ABA001E168A /* ClassificationView.swift in Sources */,
-				3D2584402A6A5DDE00C5197F /* DogsModel.mlmodel in Sources */,
 				B50316062A69C99300B8B519 /* SearchView.swift in Sources */,
 				30CE038B2A6A2917009872A1 /* ReportView.swift in Sources */,
 				B503160F2A69E43500B8B519 /* DogCardView.swift in Sources */,
@@ -424,6 +423,7 @@
 				B50316162A6A108200B8B519 /* MainView.swift in Sources */,
 				3D5349382A6A6529001E168A /* LiveCameraViewController.swift in Sources */,
 				3D42101D2A69A6A1003D1329 /* hack_iosApp.swift in Sources */,
+				B5FCF73E2A6B0BF800931CCC /* DogsModel.mlmodel in Sources */,
 				3D5349472A6A6CEE001E168A /* Classification.swift in Sources */,
 				B503161A2A6A1D3600B8B519 /* MenuView.swift in Sources */,
 				B50316122A69EADD00B8B519 /* Dog.swift in Sources */,
