@@ -15,7 +15,7 @@ struct ClassificationView: View {
         let predictionLabel = predictionStatus.topLabel
         
         GeometryReader { geo in
-            HStack {
+            HStack(alignment: .top) {
                 LiveCameraRepresentable() {
                     predictionStatus.setLivePrediction(with: $0, label: $1, confidence: $2)
                 }
@@ -24,7 +24,7 @@ struct ClassificationView: View {
                 
             }// HStack
             .onAppear(perform: classifierViewModel.loadJSON)
-            .frame(width: geo.size.width, height: geo.size.width)
+            .frame(width: geo.size.width)
         }
     }
 }
