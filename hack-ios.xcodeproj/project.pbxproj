@@ -14,6 +14,15 @@
 		3D42102E2A69A6A6003D1329 /* hack_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42102D2A69A6A6003D1329 /* hack_iosTests.swift */; };
 		3D4210382A69A6A6003D1329 /* hack_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4210372A69A6A6003D1329 /* hack_iosUITests.swift */; };
 		3D42103A2A69A6A6003D1329 /* hack_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4210392A69A6A6003D1329 /* hack_iosUITestsLaunchTests.swift */; };
+		B50316032A69C29400B8B519 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316022A69C29400B8B519 /* HomeView.swift */; };
+		B50316062A69C99300B8B519 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316052A69C99300B8B519 /* SearchView.swift */; };
+		B50316092A69D18A00B8B519 /* BreedFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316082A69D18A00B8B519 /* BreedFilter.swift */; };
+		B503160D2A69DDD500B8B519 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503160C2A69DDD500B8B519 /* Location.swift */; };
+		B503160F2A69E43500B8B519 /* DogCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503160E2A69E43500B8B519 /* DogCardView.swift */; };
+		B50316122A69EADD00B8B519 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316112A69EADD00B8B519 /* Dog.swift */; };
+		B50316142A69FFFB00B8B519 /* DraggableResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316132A69FFFB00B8B519 /* DraggableResultView.swift */; };
+		B50316162A6A108200B8B519 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316152A6A108200B8B519 /* MainView.swift */; };
+		B503161A2A6A1D3600B8B519 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50316192A6A1D3600B8B519 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		3D4210332A69A6A6003D1329 /* hack-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hack-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4210372A69A6A6003D1329 /* hack_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hack_iosUITests.swift; sourceTree = "<group>"; };
 		3D4210392A69A6A6003D1329 /* hack_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hack_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B50316022A69C29400B8B519 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B50316052A69C99300B8B519 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B50316082A69D18A00B8B519 /* BreedFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedFilter.swift; sourceTree = "<group>"; };
+		B503160C2A69DDD500B8B519 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B503160E2A69E43500B8B519 /* DogCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCardView.swift; sourceTree = "<group>"; };
+		B50316112A69EADD00B8B519 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		B50316132A69FFFB00B8B519 /* DraggableResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableResultView.swift; sourceTree = "<group>"; };
+		B50316152A6A108200B8B519 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B50316192A6A1D3600B8B519 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +112,11 @@
 		3D42101B2A69A6A1003D1329 /* hack-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B50316072A69D17300B8B519 /* Model */,
 				3D42101C2A69A6A1003D1329 /* hack_iosApp.swift */,
 				3D42101E2A69A6A1003D1329 /* ContentView.swift */,
+				B50316022A69C29400B8B519 /* HomeView.swift */,
+				B50316042A69C2C400B8B519 /* Components */,
 				3D4210202A69A6A6003D1329 /* Assets.xcassets */,
 				3D4210222A69A6A6003D1329 /* Preview Content */,
 			);
@@ -125,6 +146,28 @@
 				3D4210392A69A6A6003D1329 /* hack_iosUITestsLaunchTests.swift */,
 			);
 			path = "hack-iosUITests";
+			sourceTree = "<group>";
+		};
+		B50316042A69C2C400B8B519 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B50316052A69C99300B8B519 /* SearchView.swift */,
+				B503160E2A69E43500B8B519 /* DogCardView.swift */,
+				B50316132A69FFFB00B8B519 /* DraggableResultView.swift */,
+				B50316152A6A108200B8B519 /* MainView.swift */,
+				B50316192A6A1D3600B8B519 /* MenuView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B50316072A69D17300B8B519 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B50316082A69D18A00B8B519 /* BreedFilter.swift */,
+				B503160C2A69DDD500B8B519 /* Location.swift */,
+				B50316112A69EADD00B8B519 /* Dog.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50316092A69D18A00B8B519 /* BreedFilter.swift in Sources */,
+				B50316062A69C99300B8B519 /* SearchView.swift in Sources */,
+				B503160F2A69E43500B8B519 /* DogCardView.swift in Sources */,
+				B50316032A69C29400B8B519 /* HomeView.swift in Sources */,
 				3D42101F2A69A6A1003D1329 /* ContentView.swift in Sources */,
+				B50316162A6A108200B8B519 /* MainView.swift in Sources */,
 				3D42101D2A69A6A1003D1329 /* hack_iosApp.swift in Sources */,
+				B503161A2A6A1D3600B8B519 /* MenuView.swift in Sources */,
+				B50316122A69EADD00B8B519 /* Dog.swift in Sources */,
+				B50316142A69FFFB00B8B519 /* DraggableResultView.swift in Sources */,
+				B503160D2A69DDD500B8B519 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
