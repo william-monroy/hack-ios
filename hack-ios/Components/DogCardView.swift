@@ -41,6 +41,7 @@ struct DogCardView: View {
                     
                     HStack {
                         Text(pet.breed)
+                            .foregroundColor(.black)
                             .font(.system(size: 20, weight: .bold))
                         
                         Spacer()
@@ -59,8 +60,8 @@ struct DogCardView: View {
                                 .foregroundColor(.orange)
                             
                             if (color == pet.color.last) {
-                                Text("/")
-                                Text(pet.size)
+                                Text("/  \(pet.size)")
+                                    .foregroundColor(.black)
                             } else {
                                 Text("•")
                                     .font(.system(size: 18, weight: .semibold))
@@ -72,6 +73,7 @@ struct DogCardView: View {
                     } // -> HStack
                     
                     Text(pet.description)
+                        .foregroundColor(.black)
                         .font(.system(size: 12))
                     
                     Spacer()
@@ -95,7 +97,7 @@ struct DogCardView: View {
                             Circle()
                                 .stroke(.orange, lineWidth: 2)
                                 .frame(width: 10, height: 10)
-                        }
+                        } // -> if-else
                         
                         Text("Picked")
                             .foregroundColor(.gray)
