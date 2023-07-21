@@ -26,7 +26,7 @@ struct MenuView: View {
                     HomeView()
                         .tag(Tab.house)
                     
-                    ContentView()
+                    ClassificationView()
                         .tag(Tab.camera)
                     
                     ReportView()
@@ -38,7 +38,6 @@ struct MenuView: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 780)
                 MainView(selectedTab: $tabSelected)
             } // -> VStack
             
