@@ -29,7 +29,7 @@ struct MenuView: View {
                     ContentView()
                         .tag(Tab.camera)
                     
-                    ContentView()
+                    ReportView()
                         .tag(Tab.report)
                     
                 } // -> TabView

@@ -11,7 +11,7 @@ import SwiftUI
 struct hack_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuView()
         }
     }
 }
