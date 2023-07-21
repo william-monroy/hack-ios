@@ -65,10 +65,9 @@ struct ContentView: View {
                             
                             if email.isEmpty {
                                 Text("Email")
-                                    .foregroundColor(.gray.opacity(0.7)) // Color del texto de apoyo
+                                    .foregroundColor(.gray.opacity(0.7))
                                     .fontWeight(.light)
                                     .padding(.horizontal, 16.5)
-                                    .offset(y: 0) // Ajustar la posición vertical del texto de apoyo
                             } // -> if-else
                             
                         } // -> ZStack
@@ -84,10 +83,9 @@ struct ContentView: View {
                             
                             if password.isEmpty {
                                 Text("Password")
-                                    .foregroundColor(.gray.opacity(0.7)) // Color del texto de apoyo
+                                    .foregroundColor(.gray.opacity(0.7))
                                     .fontWeight(.light)
                                     .padding(.horizontal, 16.5)
-                                    .offset(y: 0) // Ajustar la posición vertical del texto de apoyo
                             } // -> if-else
                             
                         } // -> ZStack

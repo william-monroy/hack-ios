@@ -28,10 +28,19 @@ struct SearchView: View {
                     Image(systemName: "mappin.and.ellipse")
                         .foregroundColor(.orange)
                     
-                    TextField("Enter an address, neighbourhood or city", text: $address)
-                        .foregroundColor(.gray)
-                        .font(.system(size: 13))
-                        .frame(width: 250)
+                    ZStack {
+                        
+                        if address.isEmpty {
+                            Text("Enter an address, neighbourhood or city")
+                                .font(.system(size: 13, weight: .light))
+                                .foregroundColor(.gray.opacity(0.7))
+                        }
+                        
+                        TextField("", text: $address)
+                            .font(.system(size: 13))
+                            .frame(width: 240)
+                        
+                    }
                     
                     Spacer()
                         .frame(width: 25)
