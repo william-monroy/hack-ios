@@ -45,12 +45,14 @@ struct DraggableResultView: View {
                         Text("Results")
                             .foregroundColor(.black)
                             .font(.system(size: 30, weight: .bold))
+                            .scenePadding()
                         
                         Spacer()
-                            .frame(width: 200)
                         
                         Text("\(Dog.dogs.count) Results")
                             .foregroundColor(.black)
+                            .scenePadding()
+                            .font(.system(size:15))
                         
                     } // -> HStack
                     
