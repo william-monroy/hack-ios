@@ -10,6 +10,9 @@ import SwiftUI
 enum Tab: String, CaseIterable {
     case house = "house.fill"
     case camera = "camera.fill"
+//    case report = "light.beacon.max.fill"
+//    case report = "list.bullet.rectangle.portrait.fill"
+    case report = "pawprint.fill"
 }
 
 struct MainView: View {
@@ -31,6 +34,7 @@ struct MainView: View {
                             }
                         }
                     Spacer()
+                   
                 }
             }
             .frame(width: nil, height: 60)

@@ -29,6 +29,9 @@ struct MenuView: View {
                     ContentView()
                         .tag(Tab.camera)
                     
+                    ContentView()
+                        .tag(Tab.report)
+                    
                 } // -> TabView
                 
             } // -> VStack
