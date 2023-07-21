@@ -35,16 +35,16 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack {
-                    TextField("Correo Electrónico", text: $email)
+                    TextField("Email", text: $email)
                         .padding()
-                        .background(Color.white.opacity(0.7))
+                        .background(Color.white.opacity(0.85))
                         .cornerRadius(5.0)
                     
-                    SecureField("Contraseña", text: $password)
+                    SecureField("Password", text: $password)
                         .padding()
-                        .background(Color.white.opacity(0.7))
+                        .background(Color.white.opacity(0.85))
                         .cornerRadius(5.0)
-                    
+                        
                     Button(action: {
                         print("Botón de inicio de sesión presionado")
                     }) {
