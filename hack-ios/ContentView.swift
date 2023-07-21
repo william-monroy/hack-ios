@@ -24,6 +24,7 @@ struct ContentView: View {
             ZStack {
                 
                 Color.white
+                    .ignoresSafeArea()
                 
                 Image("Pattern")
                     .resizable()
@@ -41,7 +42,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 200, height: 200)
                         
-                        Text("Where is my Woof?")
+                        Text("Sniff Out")
                             .foregroundColor(.black)
                             .font(.system(size: 34, weight: .bold, design: .rounded))
                             .multilineTextAlignment(.center)
