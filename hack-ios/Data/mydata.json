@@ -1,0 +1,77 @@
+[
+    {
+        "label": "Bichon maltes",
+        "water": 3,
+        "emoji": "🍅"
+    },
+    {
+        "label": "Bulldog",
+        "water": 14,
+        "emoji": "🍊"
+    },
+    {
+        "label": "Chihuahua",
+        "water": 60,
+        "emoji": "🥑"
+    },
+    {
+        "label": "Cocker",
+        "water": 5,
+        "emoji": "🥜"
+    },
+    {
+        "label": "Daschund",
+        "water": 14,
+        "emoji": "🍊"
+    },
+    {
+        "label": "German Sheperd",
+        "water": 60,
+        "emoji": "🥑"
+    },
+    {
+        "label": "Golden Retriever",
+        "water": 5,
+        "emoji": "🥜"
+    },
+    {
+        "label": "Labrador",
+        "water": 14,
+        "emoji": "🍊"
+    },
+    {
+        "label": "Poodle",
+        "water": 60,
+        "emoji": "🥑"
+    },
+    {
+        "label": "Pug",
+        "water": 5,
+        "emoji": "🥜"
+    },
+    {
+        "label": "Schnauzer",
+        "water": 14,
+        "emoji": "🍊"
+    },
+    {
+        "label": "Shih-Tzu",
+        "water": 60,
+        "emoji": "🥑"
+    },
+    {
+        "label": "Siberian Husky",
+        "water": 5,
+        "emoji": "🥜"
+    },
+    {
+        "label": "Terrier boxer",
+        "water": 60,
+        "emoji": "🥑"
+    },
+    {
+        "label": "World",
+        "water": 5,
+        "emoji": "🥜"
+    }
+]
